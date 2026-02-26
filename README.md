@@ -21,7 +21,7 @@ This project was created for learning and practice in web development.
 ## How to Run the Project
 1. Download the project folder.
 2. Open the file:
-   ASSIGN1N2.html
+   index.html
 3. The website will run automatically in your browser.
 
 ## Project Purpose
