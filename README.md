@@ -1,4 +1,4 @@
-# Fruits Gallery Website
+# Simple Fruits Gallery Website
 
 ## Description
 This project is a simple interactive Fruits Gallery website built using HTML, CSS, and JavaScript.  
