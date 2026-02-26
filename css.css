@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    color: #2a4d69;
+    margin: 20px;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    padding: 15px;
+}
+.gallery img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px gray;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+}
+.modal img {
+    max-width: 90vw;
+    max-height: 70vh;
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+.close {
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    cursor: pointer;
+}
+#fruitDescription {
+    color: #fff;
+    font-size: 18px;
+    margin-top: 10px;
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+}
+.controls {
+    margin-top: 15px;
+}
+button {
+    background-color: #2a4d69;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+button:hover {
+    background-color: #4b86b4;
+}
